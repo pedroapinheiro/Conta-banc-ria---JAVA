@@ -185,7 +185,7 @@ public class Menu {
 					System.out.println("Valor do Saque: ");
 					valor = leia.nextFloat();
 					
-					// Chamada para o Método Sacar
+					contas.sacar(numero, valor);
 					
 					keyPress();
 					break;
@@ -198,7 +198,7 @@ public class Menu {
 					System.out.println("Valor do Depósito: ");
 					valor = leia.nextFloat();
 					
-					// Chamada para o Método Depositar
+					contas.depositar(numero, valor);
 
 					keyPress();
 					break;
@@ -214,7 +214,7 @@ public class Menu {
 					System.out.println("Valor da Transferência: ");
 					valor = leia.nextFloat();
 					
-					// Chamada para o Método Transferir
+					contas.transferir(numero, numeroDestino, valor);
 					
 					keyPress();
 					break;
